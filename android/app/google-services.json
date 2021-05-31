@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "109356867859",
+    "project_id": "listacompraraphaela",
+    "storage_bucket": "listacompraraphaela.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109356867859:android:726ed13e8b5b010993fae6",
+        "android_client_info": {
+          "package_name": "com.appraphaela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109356867859-jn8e692395f100o1ti81ei8nm8m9edf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appraphaela",
+            "certificate_hash": "a8179e47c4917c15ae07b6ed7a8e7f2cb95f1a14"
+          }
+        },
+        {
+          "client_id": "109356867859-bl121mvelphusu28ecr2tfli22ikvjr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTanGkdWPhzPgbB4_Mc8wub09t_tWbcnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "109356867859-bl121mvelphusu28ecr2tfli22ikvjr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
