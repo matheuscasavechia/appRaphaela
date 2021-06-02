@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   TouchableNativeFeedback,
 } from 'react-native';
-import {Text, Input, Item, Label} from 'native-base';
+import {Text, Input, Item, Label, Icon} from 'native-base';
 import LinearGradient from 'react-native-linear-gradient';
 
 export default function App() {
@@ -41,7 +41,12 @@ export default function App() {
           </Item>
           <Item floatingLabel style={{marginTop: 10, borderColor: '#ffffff'}}>
             <Label style={{color: '#ffffff'}}>Senha</Label>
-            <Input style={{color: '#ffffff'}} />
+            <Input
+              textContentType="password"
+              autoCapitalize="none"
+              secureTextEntry={true}
+              style={{color: '#ffffff'}}
+            />
           </Item>
         </View>
 
@@ -51,15 +56,51 @@ export default function App() {
           background={TouchableNativeFeedback.Ripple()}
           onPress={() => {}}
           style={{
-            height: 70,
+            height: 50,
             width: '95%',
             justifyContent: 'center',
             alignSelf: 'center',
             backgroundColor: '#ffffff',
-            borderRadius: 22,
+            borderRadius: 36,
+            elevation: 5,
+            marginTop: 15,
           }}>
-          <Text style={{textAlign: 'center'}}>Bora Entrar!</Text>
+          <Text
+            style={{
+              textAlign: 'center',
+              color: '#FA69DA',
+              fontSize: 18,
+              fontWeight: 'bold',
+            }}>
+            Bora Entrar!
+          </Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+          underlayColor="rgba(0, 0, 0, 0.2)"
+          useForeground
+          background={TouchableNativeFeedback.Ripple()}
+          onPress={() => {}}
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: 10,
+          }}>
+          <Text style={{color: '#999999', textDecorationLine: 'underline'}}>
+            Faça seu cadastro já!
+          </Text>
+        </TouchableOpacity>
+
+        <View
+          style={{
+            flexDirection: 'row',
+            width: '100%',
+            justifyContent: 'center',
+          }}>
+          <View style={{borderBottomWidth: 1}} />
+          <Text style={{textAlign: 'center'}}>ou</Text>
+          <View style={{borderBottomWidth: 1}} />
+        </View>
       </LinearGradient>
     </KeyboardAvoidingView>
   );
