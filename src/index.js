@@ -6,18 +6,18 @@ import {
   TouchableOpacity,
   TouchableNativeFeedback,
 } from 'react-native';
-import {Text, Input, Item, Label, Icon} from 'native-base';
+import { Text, Input, Item, Label, Icon } from 'native-base';
 import LinearGradient from 'react-native-linear-gradient';
 
 export default function App() {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-      style={{flex: 1}}>
+      style={{ flex: 1 }}>
       <LinearGradient
-        style={{flex: 1}}
-        start={{x: 0, y: 1}}
-        end={{x: 0, y: 0}}
+        style={{ flex: 1 }}
+        start={{ x: 0, y: 1 }}
+        end={{ x: 0, y: 0 }}
         colors={['#ffffff', '#FA69DA', '#FF41D5']}>
         <View
           style={{
@@ -35,17 +35,17 @@ export default function App() {
             marginLeft: 16,
             marginRight: 16,
           }}>
-          <Item floatingLabel style={{borderColor: '#ffffff'}}>
-            <Label style={{color: '#ffffff'}}>Usuário</Label>
-            <Input style={{color: '#ffffff'}} />
+          <Item floatingLabel style={{ borderColor: '#ffffff' }}>
+            <Label style={{ color: '#ffffff' }}>Usuário</Label>
+            <Input style={{ color: '#ffffff' }} />
           </Item>
-          <Item floatingLabel style={{marginTop: 10, borderColor: '#ffffff'}}>
-            <Label style={{color: '#ffffff'}}>Senha</Label>
+          <Item floatingLabel style={{ marginTop: 10, borderColor: '#ffffff' }}>
+            <Label style={{ color: '#ffffff' }}>Senha</Label>
             <Input
               textContentType="password"
               autoCapitalize="none"
               secureTextEntry={true}
-              style={{color: '#ffffff'}}
+              style={{ color: '#ffffff' }}
             />
           </Item>
         </View>
@@ -54,7 +54,7 @@ export default function App() {
           underlayColor="rgba(0, 0, 0, 0.2)"
           useForeground
           background={TouchableNativeFeedback.Ripple()}
-          onPress={() => {}}
+          onPress={() => { }}
           style={{
             height: 50,
             width: '95%',
@@ -80,13 +80,13 @@ export default function App() {
           underlayColor="rgba(0, 0, 0, 0.2)"
           useForeground
           background={TouchableNativeFeedback.Ripple()}
-          onPress={() => {}}
+          onPress={() => { }}
           style={{
             justifyContent: 'center',
             alignItems: 'center',
             marginTop: 10,
           }}>
-          <Text style={{color: '#999999', textDecorationLine: 'underline'}}>
+          <Text style={{ color: '#999999', textDecorationLine: 'underline' }}>
             Faça seu cadastro já!
           </Text>
         </TouchableOpacity>
@@ -96,10 +96,25 @@ export default function App() {
             flexDirection: 'row',
             width: '100%',
             justifyContent: 'center',
+            marginTop: 25
           }}>
-          <View style={{borderBottomWidth: 1}} />
-          <Text style={{textAlign: 'center'}}>ou</Text>
-          <View style={{borderBottomWidth: 1}} />
+          <View
+            style={{
+              height: 1,
+              backgroundColor: '#999999',
+              width: 150,
+              alignSelf: 'center',
+            }}
+          />
+          <Text style={{ textAlign: 'center', marginLeft: 10, marginRight: 10, color:'#999999', textTransform:'uppercase' }}>ou</Text>
+          <View
+            style={{
+              height: 1,
+              backgroundColor: '#999999',
+              width: 150,
+              alignSelf: 'center',
+            }}
+          />
         </View>
       </LinearGradient>
     </KeyboardAvoidingView>
