@@ -16,16 +16,16 @@ export default function App() {
       style={{ flex: 1 }}>
       <LinearGradient
         style={{ flex: 1 }}
-        start={{ x: 0, y: 1 }}
-        end={{ x: 0, y: 0 }}
-        colors={['#ffffff', '#FA69DA', '#FF41D5']}>
+        start={{ x: 0, y: 0 }}
+        end={{ x: 0, y: 1 }}
+        colors={['#ffffff', '#FF61DC', '#FF41D5']}>
         <View
           style={{
             justifyContent: 'center',
             alignItems: 'center',
             height: '50%',
           }}>
-          <Text>LOGO DO APP AQUI</Text>
+          <Text style={{fontSize: 30 }}>iiih FUDEU!!!</Text>
         </View>
 
         <View
@@ -86,7 +86,7 @@ export default function App() {
             alignItems: 'center',
             marginTop: 10,
           }}>
-          <Text style={{ color: '#999999', textDecorationLine: 'underline' }}>
+          <Text style={{ color: '#ffffff', textDecorationLine: 'underline' }}>
             Faça seu cadastro já!
           </Text>
         </TouchableOpacity>
@@ -101,16 +101,16 @@ export default function App() {
           <View
             style={{
               height: 1,
-              backgroundColor: '#999999',
+              backgroundColor: '#ffffff',
               width: 150,
               alignSelf: 'center',
             }}
           />
-          <Text style={{ textAlign: 'center', marginLeft: 10, marginRight: 10, color:'#999999', textTransform:'uppercase' }}>ou</Text>
+          <Text style={{ textAlign: 'center', marginLeft: 10, marginRight: 10, color:'#ffffff', textTransform:'uppercase' }}>ou</Text>
           <View
             style={{
               height: 1,
-              backgroundColor: '#999999',
+              backgroundColor: '#ffffff',
               width: 150,
               alignSelf: 'center',
             }}
